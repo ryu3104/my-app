@@ -7,12 +7,32 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="boxing-background" aria-hidden="true">
+      <div class="boxer boxer-left">
+        <span class="head"></span>
+        <span class="body"></span>
+        <span class="arm arm-front"></span>
+        <span class="arm arm-back"></span>
+        <span class="glove glove-front"></span>
+        <span class="glove glove-back"></span>
+      </div>
+      <div class="boxer boxer-right">
+        <span class="head"></span>
+        <span class="body"></span>
+        <span class="arm arm-front"></span>
+        <span class="arm arm-back"></span>
+        <span class="glove glove-front"></span>
+        <span class="glove glove-back"></span>
+      </div>
+      <span class="ring-line ring-line-top"></span>
+      <span class="ring-line ring-line-bottom"></span>
+    </div>
     <main>
       <section class="hero" aria-label="プロフィール">
         <div class="hero-copy">
           <p class="eyebrow">Student / Fighter / Horse Racing Master</p>
           <h1>りゅ</h1>
-          <p class="lead">
+          <p class="lead" data-typing>
             大学生として学びながら、格闘家として日々鍛えています。
             競馬を読むことにも本気で向き合う、競馬マスターです。
           </p>
@@ -48,5 +68,6 @@
         </section>
       </div>
     </main>
+    <script src="script.js" defer></script>
   </body>
 </html>
