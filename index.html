@@ -4,147 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>りゅ | Profile</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        color: #f4f1ea;
-        background: #111214;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background:
-          linear-gradient(135deg, rgba(196, 167, 92, 0.12), transparent 36%),
-          linear-gradient(315deg, rgba(75, 118, 143, 0.15), transparent 40%),
-          #111214;
-      }
-
-      main {
-        width: min(92vw, 920px);
-        margin: 0 auto;
-        padding: 72px 0;
-      }
-
-      .hero {
-        display: grid;
-        gap: 28px;
-        min-height: calc(100vh - 144px);
-        align-content: center;
-      }
-
-      .eyebrow {
-        margin: 0;
-        color: #c4a75c;
-        font-size: 0.875rem;
-        font-weight: 700;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(3rem, 13vw, 7rem);
-        line-height: 1.05;
-      }
-
-      .lead {
-        margin: 0;
-        max-width: 44rem;
-        color: #d4d0c6;
-        font-size: clamp(1.2rem, 3vw, 1.6rem);
-        line-height: 1.7;
-      }
-
-      .profile-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-      }
-
-      section {
-        border: 1px solid rgba(244, 241, 234, 0.14);
-        border-radius: 8px;
-        padding: 24px;
-        background: rgba(255, 255, 255, 0.04);
-      }
-
-      h2 {
-        margin: 0 0 14px;
-        color: #f4f1ea;
-        font-size: 1rem;
-      }
-
-      p,
-      li {
-        color: #c8c2b8;
-        font-size: 1rem;
-        line-height: 1.7;
-      }
-
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      li {
-        border: 1px solid rgba(196, 167, 92, 0.32);
-        border-radius: 999px;
-        padding: 7px 12px;
-        background: rgba(196, 167, 92, 0.08);
-      }
-
-      @media (max-width: 760px) {
-        main {
-          padding: 48px 0;
-        }
-
-        .hero {
-          min-height: auto;
-        }
-
-        .profile-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main>
-      <div class="hero">
-        <p class="eyebrow">Student / Fighter / Horse Racing Master</p>
-        <h1>りゅ</h1>
-        <p class="lead">
-          大学生として学びながら、格闘家として日々鍛えています。
-          競馬を読むことにも本気で向き合う、競馬マスターです。
-        </p>
-
-        <div class="profile-grid">
-          <section>
-            <h2>Profile</h2>
-            <p>大学生、格闘家。挑戦することを大切にしています。</p>
-          </section>
-
-          <section>
-            <h2>Focus</h2>
-            <p>競馬の流れを読み、勝負どころを見極めることが得意です。</p>
-          </section>
-
-          <section>
-            <h2>Interests</h2>
-            <ul>
-              <li>カラオケ</li>
-              <li>お笑い</li>
-              <li>競馬</li>
-              <li>格闘技観戦</li>
-            </ul>
-          </section>
+      <section class="hero" aria-label="プロフィール">
+        <div class="hero-copy">
+          <p class="eyebrow">Student / Fighter / Horse Racing Master</p>
+          <h1>りゅ</h1>
+          <p class="lead">
+            大学生として学びながら、格闘家として日々鍛えています。
+            競馬を読むことにも本気で向き合う、競馬マスターです。
+          </p>
         </div>
+
+        <div class="visual">
+          <img class="profile-image" src="イラスト.png" alt="りゅのイラスト">
+        </div>
+      </section>
+
+      <div class="profile-grid" aria-label="自己紹介の詳細">
+        <section class="profile-card">
+          <span class="card-number">01</span>
+          <h2>Profile</h2>
+          <p>大学生、格闘家。挑戦することを大切にしています。</p>
+        </section>
+
+        <section class="profile-card">
+          <span class="card-number">02</span>
+          <h2>Focus</h2>
+          <p>競馬の流れを読み、勝負どころを見極めることが得意です。</p>
+        </section>
+
+        <section class="profile-card">
+          <span class="card-number">03</span>
+          <h2>Interests</h2>
+          <ul class="tag-list">
+            <li>カラオケ</li>
+            <li>お笑い</li>
+            <li>競馬</li>
+            <li>格闘技観戦</li>
+          </ul>
+        </section>
       </div>
     </main>
   </body>
