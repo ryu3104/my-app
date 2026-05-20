@@ -3,71 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>りゅ | Profile</title>
+    <title>Particle Network</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="boxing-background" aria-hidden="true">
-      <div class="boxer boxer-left">
-        <span class="head"></span>
-        <span class="body"></span>
-        <span class="arm arm-front"></span>
-        <span class="arm arm-back"></span>
-        <span class="glove glove-front"></span>
-        <span class="glove glove-back"></span>
-      </div>
-      <div class="boxer boxer-right">
-        <span class="head"></span>
-        <span class="body"></span>
-        <span class="arm arm-front"></span>
-        <span class="arm arm-back"></span>
-        <span class="glove glove-front"></span>
-        <span class="glove glove-back"></span>
-      </div>
-      <span class="ring-line ring-line-top"></span>
-      <span class="ring-line ring-line-bottom"></span>
-    </div>
-    <main>
-      <section class="hero" aria-label="プロフィール">
-        <div class="hero-copy">
-          <p class="eyebrow">Student / Fighter / Horse Racing Master</p>
-          <h1>りゅ</h1>
-          <p class="lead" data-typing>
-            大学生として学びながら、格闘家として日々鍛えています。
-            競馬を読むことにも本気で向き合う、競馬マスターです。
-          </p>
-        </div>
-
-        <div class="visual">
-          <img class="profile-image" src="イラスト.png" alt="りゅのイラスト">
-        </div>
+    <main class="page-shell">
+      <section class="intro" aria-label="パーティクルアニメーション">
+        <p class="eyebrow">p5.js / Particle Network</p>
+        <h1>Particle<br>Connection</h1>
+        <p>
+          画面上を動く複数のパーティクルが、近づいた瞬間だけ細い線でつながる
+          インタラクティブなアニメーションです。
+        </p>
       </section>
-
-      <div class="profile-grid" aria-label="自己紹介の詳細">
-        <section class="profile-card">
-          <span class="card-number">01</span>
-          <h2>Profile</h2>
-          <p>大学生、格闘家。挑戦することを大切にしています。</p>
-        </section>
-
-        <section class="profile-card">
-          <span class="card-number">02</span>
-          <h2>Focus</h2>
-          <p>競馬の流れを読み、勝負どころを見極めることが得意です。</p>
-        </section>
-
-        <section class="profile-card">
-          <span class="card-number">03</span>
-          <h2>Interests</h2>
-          <ul class="tag-list">
-            <li>カラオケ</li>
-            <li>お笑い</li>
-            <li>競馬</li>
-            <li>格闘技観戦</li>
-          </ul>
-        </section>
-      </div>
     </main>
-    <script src="script.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.0.5/p5.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
